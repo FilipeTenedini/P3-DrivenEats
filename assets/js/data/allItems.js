@@ -1,4 +1,4 @@
-allItems = [
+export const allItems = [
     {id: 1, type: 'principal', foto: 'assets/images/frango.png', title: 'frangot' , desc: 'frangodesc', price: 18.50},
     {id: 2, type: 'principal', foto: 'assets/images/frango.png', title: 'frangot', desc:'frangodesc' , price: 19.29},
     {id: 3, type: 'principal', foto: 'assets/images/frango.png', title: 'frangot', desc:'frangodesc' , price: 30.40},
@@ -15,14 +15,3 @@ allItems = [
     {id: 14, type: 'dessert', foto: 'assets/images/frango.png', title: 'frangot', desc:'frangodesc' , price: 24.50},
     {id: 15, type: 'dessert', foto: 'assets/images/frango.png', title: 'frangot', desc:'frangodesc' , price: 32.00},
 ]
-
-allItems.forEach((item, index)=>{
-    foodItem = document.querySelector('.models .option').cloneNode(true);
-    
-    foodItem.querySelector('.option-img img').src = item.foto;
-    foodItem.querySelector('.option-title').innerHTML = item.title;
-    foodItem.querySelector('.option-desc p').innerHTML = item.desc;
-    foodItem.querySelector('.option-price').innerHTML = `R$ ${item.price.toFixed(2)}`;
-
-    document.querySelector(`.${item.type} .options`).append(foodItem);    
-});
