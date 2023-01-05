@@ -59,7 +59,7 @@ main .container{
     margin-top: 31px;
 }
 main .title{
-    color: #333333;
+    color: #333333; 
     font-family: 'Righteous';
     font-size: 26px;
     font-weight: 400;
@@ -68,15 +68,24 @@ main .title{
 }
 .options{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.options::-webkit-scrollbar{
+    display: none;
+}
+.selected{
+    border: 3px solid #32B72F;
 }
 .option{
     background-color: #FFF;
     width: 172px;
     height: 216px;
-    border: 3px solid #32B72F;
     border-radius: 9px;
+    margin-right: 16px;
 }
 .option-content{
     padding: 14px;
@@ -99,6 +108,10 @@ main .title{
     margin-bottom: 8px;
 }
 .option-desc{
+    height: 42px;
+    margin-bottom: 10px;
+}
+.option-desc p{
     color: #A6A6A6;
     font-weight: 300;
     font-size: 15px;
@@ -120,6 +133,7 @@ footer{
     height: 92px;
     position: fixed;
     bottom: 0;
+    right: 0;
     background-color: #FFF;
     display: flex;
     justify-content: center;
