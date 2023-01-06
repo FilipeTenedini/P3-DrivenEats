@@ -1,28 +1,20 @@
 import { allItems } from "./data/allItems.js";
 
 let cart = [];
+let types = [];
 
-document.querySelectorAll('.option').forEach((item, index)=>{
+document.querySelectorAll('.option').forEach((item)=>{
     item.addEventListener('click', ()=>{
 
-        const selectedPrincipal = document.querySelector('.principal .selected');
-        const selectedDrink = document.querySelector('.drink .selected');
-        const selectedDessert = document.querySelector('.dessert .selected');
         const itemPos = allItems.findIndex((i) => i.id == item.getAttribute('data-key'));
         const type = allItems[itemPos].type;
 
-
-        if(selectedPrincipal !== null && type === 'principal'){
-            selectedPrincipal.classList.remove('selected');
-            selectedPrincipal.querySelector('ion-icon').classList.remove('ion-active');
-
-            
-        } if (selectedDrink !== null && type === 'drink'){
-            selectedDrink.classList.remove('selected');
-            selectedDrink.querySelector('ion-icon').classList.remove('ion-active');
-        } else if (selectedDessert !== null && type === 'dessert') {
-            selectedDessert.classList.remove('selected');
-            selectedDessert.querySelector('ion-icon').classList.remove('ion-active');
+        if (types.includes(type)){
+            const selectedItem = document.querySelector(`.${type} .selected`);
+            selectedItem.classList.remove('selected');
+            selectedItem.querySelector('ion-icon').classList.remove('ion-active');
+        } else {
+            types.push(type)
         }
 
         item.classList.toggle('selected');

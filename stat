@@ -1,0 +1,41 @@
+[33mcommit 2001408cca373526b5a2e2086cdf83c66dde5e41[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: filipetenedini <tenedinifilipe@gmail.com>
+Date:   Fri Jan 6 12:52:09 2023 -0300
+
+    data-teste add
+
+[33mcommit da72cc4a510af206622fceb9bc91037a3dabd462[m
+Author: filipetenedini <tenedinifilipe@gmail.com>
+Date:   Fri Jan 6 00:48:14 2023 -0300
+
+    add cart function
+
+[33mcommit 82fe5c8c654d2d3d67d6c82c0b8177ec2e06f738[m
+Author: filipetenedini <tenedinifilipe@gmail.com>
+Date:   Thu Jan 5 23:06:00 2023 -0300
+
+    select items ok
+
+[33mcommit d58928ad806ed280aee82a64db04afa23117839b[m
+Author: filipetenedini <tenedinifilipe@gmail.com>
+Date:   Thu Jan 5 17:11:55 2023 -0300
+
+    Modularize JS
+
+[33mcommit 7aea18d6f155e988a553f5826ded3badb67a8ec7[m
+Author: filipetenedini <tenedinifilipe@gmail.com>
+Date:   Thu Jan 5 15:58:01 2023 -0300
+
+    insert html w js
+
+[33mcommit a341c354cfd0dc93cfe656f1dbb7689bfa68d09b[m
+Author: filipetenedini <tenedinifilipe@gmail.com>
+Date:   Thu Jan 5 11:44:07 2023 -0300
+
+    layout finalizado
+
+[33mcommit 17144f60791e52fe61f48f85355fe989eef3bebf[m
+Author: filipetenedini <tenedinifilipe@gmail.com>
+Date:   Tue Jan 3 23:37:36 2023 -0300
+
+    first commit
