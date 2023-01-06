@@ -1,7 +1,11 @@
 import { allItems } from "./data/allItems.js";
 
-let cart = [];
+let cart = {
+    items: [],
+    prices:[]
+};
 let types = [];
+
 
 document.querySelectorAll('.option').forEach((item)=>{
     item.addEventListener('click', ()=>{
@@ -11,6 +15,7 @@ document.querySelectorAll('.option').forEach((item)=>{
 
         if (types.includes(type)){
             const selectedItem = document.querySelector(`.${type} .selected`);
+            
             selectedItem.classList.remove('selected');
             selectedItem.querySelector('ion-icon').classList.remove('ion-active');
         } else {
@@ -38,15 +43,11 @@ function changeButton(){
 
 function updateCart(){
     document.querySelectorAll('.selected').forEach((item)=>{
-
         const itemPos = allItems.findIndex((i) => i.id == item.getAttribute('data-key'));
         const itemTitle = allItems[itemPos].title;
         const itemPrice = allItems[itemPos].price;
 
-        cart.push({
-            item: itemTitle,
-            price: itemPrice
-        });
+        cart.items.push(itemTitle);
+        cart.prices.push(itemPrice);
     });
-    // console.log(cart)
 }

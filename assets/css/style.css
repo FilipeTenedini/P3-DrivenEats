@@ -9,6 +9,97 @@ body{
 .models{
     display: none;
 }
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 999;
+}
+.modal-content{
+    width: calc(100vw - 20px);
+    max-width: 377px;
+    height: 343px;
+    background-color: #50D074;
+    border-radius: 10px;
+    
+}
+.modal-order{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.modal-order h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+}
+.order-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 50px);
+}
+.order-items-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.order-item--name,
+.order-item--price{
+    color: #fff;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.order-total{
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: space-between;
+}
+.total-txt,
+.total-number{
+    color: #fff;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 700;
+}
+.modal .confirm{
+    background-color: #fff;
+    width: 100%;
+    max-width: 329px;
+    height: 52px;
+    color: #50D074;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+.modal .cancel{
+    background-color: transparent;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 23px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
 header{
     width: 100vw;
     height: 92px;
@@ -77,15 +168,14 @@ main .title{
     width: 100%;
     overflow: hidden;
     overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 .options::-webkit-scrollbar{
     display: none;
 }
 .options .option:first-child{
     margin-left: 19px;
-}
-.selected{
-    border: 3px solid #32B72F;
 }
 .option{
     background-color: #FFF;
@@ -97,6 +187,10 @@ main .title{
     -webkit-box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.25);
     box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.25);
+}
+.selected{
+    -webkit-box-shadow: inset 0px 0px 0px 3px #32B72F; 
+    box-shadow: inset 0px 0px 0px 3px #32B72F; 
 }
 .option ion-icon{
     position: absolute;
@@ -115,6 +209,7 @@ main .title{
     padding: 14px;
     width: 100%;
     height: 100%;
+    background-color: transparent;
 }
 .option-img{
     width: 100%;
