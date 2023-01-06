@@ -12,7 +12,6 @@
     <title>DrivenEats</title>
 </head>
 <body>
-    <!--NÃO ESQUEÇA DE VER A FUNÇÃO CLASSLIST.TOGGLE-->
     <div class="models">
         <div class="option">
             <div class="option-content">
@@ -37,7 +36,7 @@
     </header>
     <main>
         <div class="container">
-            <section class="principal">
+            <section class="dish">
                 <h2 class="title">Primeiro, seu prato</h2>
                 <div class="options"></div>
             </section>
@@ -53,13 +52,14 @@
     </main>
     <footer>
         <div class="container">
-            <button disabled>Selecione os 3 itens para fechar o pedido</button>
+            <button data-test="order-btn" disabled class="order">Selecione os 3 itens para fechar o pedido</button>
         </div>
     </footer>
 
 
     <script type="module" src ="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
     <script nomodule  src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+
     <script type="module" src="./assets/js/script.js"></script>
 </body>
 </html>

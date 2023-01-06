@@ -8,8 +8,12 @@ allItems.forEach((item, index)=>{
     foodItem.querySelector('.option-desc p').innerHTML = item.desc;
     foodItem.querySelector('.option-price').innerHTML = `R$ ${item.price.toFixed(2)}`;
     foodItem.setAttribute('data-key', item.id);
-
     document.querySelector(`.${item.type} .options`).append(foodItem);    
+
+    // teste
+    foodItem.setAttribute('data-test', item.type)
+    foodItem.querySelector('.option-price').setAttribute('data-test', "item-price")
+
 });
 
 export {};
