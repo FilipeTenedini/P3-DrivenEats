@@ -1,6 +1,6 @@
 import { allItems } from './allItems.js';
 
-allItems.forEach((item, index)=>{
+allItems.forEach((item)=>{
     const foodItem = document.querySelector('.models .option').cloneNode(true);
     
     foodItem.querySelector('.option-img img').src = item.foto;

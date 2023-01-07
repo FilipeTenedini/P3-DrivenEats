@@ -41,10 +41,10 @@ function changeButton(){
 
 // criando carrinho de compra e adicionando a compra;
 function updateCart(){
-    console.log(cart)
     document.querySelectorAll('.selected').forEach((item)=>{
-        const itemPosition = allItems.findIndex((i) => i.id === item.getAttribute('data-key'));
+        const itemPosition = allItems.findIndex((i) => i.id === Number(item.getAttribute('data-key')));
 
+        console.log(allItems[itemPosition])
         allItems[itemPosition].qt = 1;
         
         cart.push(allItems[itemPosition])
