@@ -14,4 +14,4 @@ export const allItems = [
     {id: 13, type: 'dessert', foto: 'assets/images/frango.png', title: 'frangot', desc:'frangodesc' , price: 15.00},
     {id: 14, type: 'dessert', foto: 'assets/images/frango.png', title: 'frangot', desc:'frangodesc' , price: 24.50},
     {id: 15, type: 'dessert', foto: 'assets/images/frango.png', title: 'frangot', desc:'frangodesc' , price: 32.00},
-]
+];

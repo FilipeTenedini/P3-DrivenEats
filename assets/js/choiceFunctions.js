@@ -1,7 +1,8 @@
 import { allItems } from "./data/allItems.js";
 
+const allTypesQt = Array.from(new Set(allItems.map((item)=>item.type))).length;
+const selectedTypes = [];
 let cart = [];
-const types = [];
 let name;
 let local;
 
@@ -12,24 +13,24 @@ document.querySelectorAll('.option').forEach((item)=>{
         const itemPosition = allItems.findIndex((i) => i.id === Number(item.getAttribute('data-key')));
         const type = allItems[itemPosition].type;
 
-        if (types.includes(type)){
+        if (selectedTypes.includes(type)){
             const selectedItem = document.querySelector(`.${type} .selected`);
-            
+
             selectedItem.classList.remove('selected');
             selectedItem.querySelector('ion-icon').classList.remove('ion-active');
         } else {
-            types.push(type)
+            selectedTypes.push(type);
         }
 
         item.classList.toggle('selected');
         item.querySelector('ion-icon').classList.add('ion-active');
 
-        if (document.querySelectorAll('.selected').length === 3){
+        if (document.querySelectorAll('.selected').length === allTypesQt){
             changeButton();
         }
 
     });
-})
+});
 
 // trocando botão e viabilizando uso do mesmo
 function changeButton(){
@@ -44,10 +45,9 @@ function updateCart(){
     document.querySelectorAll('.selected').forEach((item)=>{
         const itemPosition = allItems.findIndex((i) => i.id === Number(item.getAttribute('data-key')));
 
-        console.log(allItems[itemPosition])
         allItems[itemPosition].qt = 1;
-        
-        cart.push(allItems[itemPosition])
+
+        cart.push(allItems[itemPosition]);
     });
 
 }
@@ -58,7 +58,7 @@ function captData() {
     local = prompt('Qual o endereço?');
 }
 
-// inserindo dados no modal 
+// inserindo dados no modal
 function insertModalData() {
     let total = 0;
     const modal = document.querySelector('.modal');
@@ -67,7 +67,7 @@ function insertModalData() {
 
     document.querySelectorAll('.order-items-item').forEach((item, index)=>{
         total += cart[index].price;
-        item.querySelector('.order-item--name').innerHTML = cart[index].title
+        item.querySelector('.order-item--name').innerHTML = cart[index].title;
         item.querySelector('.order-item--price').innerHTML = cart[index].price.toFixed(2);
     });
 
@@ -87,10 +87,10 @@ document.querySelector('.cancel').addEventListener('click', ()=> {
     modal.classList.remove('visible');
     modal.classList.add('invisible');
     cart = [];
-})
+});
 
 function sendMsg(){
-    let minhaString = encodeURIComponent(`
+    const minhaString = encodeURIComponent(`
 Olá, gostaria de fazer o pedido:\n
 - Prato: ${document.querySelector('.dish .selected .option-title').innerHTML}
 - Bebida: ${document.querySelector('.drink .selected .option-title').innerHTML}
@@ -99,13 +99,13 @@ Total: R$ ${document.querySelector('.modal .total-number').innerHTML}
 \n
 Nome: ${name}
 Endereço: ${local}
-`)
+`);
 
-    let link = `https://wa.me/5551996693390?text=${minhaString}`;
+    const link = `https://wa.me/5551996693390?text=${minhaString}`;
 
-    document.querySelector('.modal a').setAttribute('href', link)
+    document.querySelector('.modal a').setAttribute('href', link);
 }
 
 document.querySelector('.modal .confirm').addEventListener('click', ()=>{
     sendMsg();
-})
+});
