@@ -12,8 +12,8 @@
     <title>DrivenEats</title>
 </head>
 <body>
-    <div class="models">
-        <div class="option">
+    <div class="models invisible">
+        <article class="option">
             <div class="option-content">
                 <div class="option-img">
                     <img src="" alt="">
@@ -25,19 +25,19 @@
                 <div class="option-price"></div>
             </div>
             <ion-icon name="checkmark-circle"></ion-icon>
-        </div>        
+        </article>        
     </div>
-    <div class="modal">
+    <div class="modal invisible">
         <div class="modal-content">
             <div class="modal-order">
                 <h2>Confirme seu pedido</h2>
                 <div class="order-items">
                     <div class="order-items-item">
-                        <div class="order-item--name">---</div>
+                        <div class="order-item--name">-</div>
                         <div class="order-item--price">---</div>
                     </div>
                     <div class="order-items-item">
-                        <div class="order-item--name">---</div>
+                        <div class="order-item--name">--</div>
                         <div class="order-item--price">---</div>
                     </div>
                     <div class="order-items-item">
@@ -46,10 +46,10 @@
                     </div>
                 </div>
                 <div class="order-total">
-                    <div class="total-txt">...</div>
+                    <div class="total-txt">Total</div>
                     <div class="total-number">...</div>
                 </div>
-                <button class="confirm">Tudo certo, pode pedir</button>
+                <a href=""><button class="confirm">Tudo certo, pode pedir</button></a>
                 <button class="cancel">Cancelar</button>
             </div>
         </div>
@@ -79,7 +79,7 @@
     </main>
     <footer>
         <div class="container">
-            <button data-test="order-btn" disabled class="order">Selecione os 3 itens para fechar o pedido</button>
+            <button data-test="order-btn" disabled class="orderBtn">Selecione os 3 itens para fechar o pedido</button>
         </div>
     </footer>
 
