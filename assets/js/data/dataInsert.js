@@ -11,9 +11,9 @@ allItems.forEach((item, index)=>{
     document.querySelector(`.${item.type} .options`).append(foodItem);    
 
     // data-test
-    foodItem.setAttribute('data-test', item.type)
-    foodItem.querySelector('.option-price').setAttribute('data-test', "item-price")
-
+    foodItem.setAttribute('data-test', item.type);
+    foodItem.querySelector('.option-title').setAttribute('data-test', "item-name");
+    foodItem.querySelector('.option-price').setAttribute('data-test', "item-price");
 });
 
 export {};

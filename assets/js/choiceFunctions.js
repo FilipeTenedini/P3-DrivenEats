@@ -9,7 +9,7 @@ let local;
 document.querySelectorAll('.option').forEach((item)=>{
     item.addEventListener('click', ()=>{
 
-        const itemPosition = allItems.findIndex((i) => i.id == item.getAttribute('data-key'));
+        const itemPosition = allItems.findIndex((i) => i.id === Number(item.getAttribute('data-key')));
         const type = allItems[itemPosition].type;
 
         if (types.includes(type)){
@@ -43,7 +43,7 @@ function changeButton(){
 function updateCart(){
     console.log(cart)
     document.querySelectorAll('.selected').forEach((item)=>{
-        const itemPosition = allItems.findIndex((i) => i.id == item.getAttribute('data-key'));
+        const itemPosition = allItems.findIndex((i) => i.id === item.getAttribute('data-key'));
 
         allItems[itemPosition].qt = 1;
         
