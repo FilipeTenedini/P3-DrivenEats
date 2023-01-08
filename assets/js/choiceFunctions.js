@@ -55,7 +55,13 @@ function updateCart(){
 // capturando dados do usuário
 function captData() {
     name = prompt('Qual seu nome?');
+    if (name === 'undefined') {
+        name = 'Não informado';
+    }
     local = prompt('Qual o endereço?');
+    if (local === 'undefined'){
+        local = 'Não informado';
+    }
 }
 
 // inserindo dados no modal
