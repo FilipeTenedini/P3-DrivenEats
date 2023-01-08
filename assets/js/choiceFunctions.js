@@ -107,7 +107,7 @@ Nome: ${name}
 Endereço: ${local}
 `);
 
-    const link = `https://wa.me/5551996693390?text=${minhaString}`;
+    const link = `https://wa.me/5511999151515?text=${minhaString}`;
 
     document.querySelector('.modal a').setAttribute('href', link);
 }
