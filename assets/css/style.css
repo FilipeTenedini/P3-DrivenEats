@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .invisible{
@@ -128,7 +128,7 @@ header .container{
     justify-content: flex-start;
 }
 .logo{
-    font-family: 'Righteous';
+    font-family: 'Righteous', 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 44px;
     font-weight: 400;
     color: #FFF;
@@ -160,7 +160,7 @@ main .container{
 }
 main .title{
     color: #333333; 
-    font-family: 'Righteous';
+    font-family: 'Righteous', 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 26px;
     font-weight: 400;
     line-height: 32px;
@@ -227,6 +227,7 @@ main .title{
 .option-img img{
     width: 144px;
     height: 87px;
+    border-radius: 4px;
 }
 .option-title{
     color: #333333;
