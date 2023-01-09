@@ -104,7 +104,7 @@ Olá, gostaria de fazer o pedido:\n
 - Sobremesa: ${document.querySelector('.dessert .selected .option-title').innerHTML}
 Total: R$ ${document.querySelector('.modal .total-number').innerHTML}
 \n
-Nome: ${name}
+Nome: ${name}\n
 Endereço: ${local}
 `);
 
