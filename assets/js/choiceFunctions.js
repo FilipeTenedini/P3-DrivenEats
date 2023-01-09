@@ -5,6 +5,7 @@ const selectedTypes = [];
 let cart = [];
 let name;
 let local;
+const decimalPlaces = 2;
 
 // função de clique para selecionar e tirar seleção de cada item
 document.querySelectorAll('.option').forEach((item)=>{
@@ -74,10 +75,10 @@ function insertModalData() {
     document.querySelectorAll('.order-items-item').forEach((item, index)=>{
         total += cart[index].price;
         item.querySelector('.order-item--name').innerHTML = cart[index].title;
-        item.querySelector('.order-item--price').innerHTML = cart[index].price.toFixed(2);
+        item.querySelector('.order-item--price').innerHTML = cart[index].price.toFixed(decimalPlaces).replace('.',',');
     });
 
-    modal.querySelector('.total-number').innerHTML = total.toFixed(2);
+    modal.querySelector('.total-number').innerHTML = 'R$ '+total.toFixed(decimalPlaces).replace('.',',');
 }
 
 // inserindo função no primeiro button
