@@ -102,9 +102,9 @@ Olá, gostaria de fazer o pedido:\n
 - Prato: ${document.querySelector('.dish .selected .option-title').innerHTML}
 - Bebida: ${document.querySelector('.drink .selected .option-title').innerHTML}
 - Sobremesa: ${document.querySelector('.dessert .selected .option-title').innerHTML}
-Total: R$ ${document.querySelector('.modal .total-number').innerHTML}
+Total: ${document.querySelector('.modal .total-number').innerHTML}
 \n
-Nome: ${name}\n
+Nome: ${name}
 Endereço: ${local}
 `);
 
