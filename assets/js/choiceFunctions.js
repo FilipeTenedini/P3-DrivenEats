@@ -55,11 +55,11 @@ function updateCart(){
 // capturando dados do usuário
 function captData() {
     name = prompt('Qual seu nome?');
-    if (name === 'null') {
+    if (name === null) {
         name = 'Não informado';
     }
     local = prompt('Qual o endereço?');
-    if (local === 'null'){
+    if (local === null){
         local = 'Não informado';
     }
 }
