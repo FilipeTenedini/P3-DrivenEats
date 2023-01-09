@@ -2,7 +2,7 @@
 # 3° Projeto Driven Education Bootcamp
 ## - 1° Projeto utilizando JavaScript
 ### Você pode acessar a aplicação neste link:
-  ### - <a href="https://filipetenedini.github.io/P3-DrivenEats/">Terceiro projeto (Layout Instagram)</a>
+  ### - <a href="https://filipetenedini.github.io/P3-DrivenEats/">Terceiro projeto (Driven Eats)</a>
 <br><br><br>
 <p align="center">
   |&nbsp;&nbsp;&nbsp<a href="#Projeto">Projeto</a>&nbsp;&nbsp;
