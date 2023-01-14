@@ -17,11 +17,21 @@
 
 <h3>- Requisitos passados </h3>
 
-
-- Versionamento do código
+<details>
+<summary>    
+- Versionamento do código  
+</summary>
+  
     - [ ]  Versionamento usando Git é obrigatório, crie um **repositório público** no seu perfil do GitHub.
     - [ ]  Faça *commits* a cada funcionalidade implementada.
-- *Layout*
+  
+ </details>
+ 
+<details>
+<summary>    
+- Layout
+</summary>
+
     - [ ]  Aplicar layout para *mobile*, seguindo o Figma fornecido (não é necessário implementar um *layout* para *desktop*).
     - [ ]  O topo e o botão de fechar pedido devem ter posicionamento fixo e não rolar com a barra de rolagem.
     - [ ]  Você pode usar imagens e textos aleatórios para ilustrar a página, porém varie o preço em cada item da mesma categoria.
@@ -47,8 +57,13 @@
         - Sobremesa: Pudim
         Total: R$ 27,70
         ```
-        
+ </details>  
+
+<details>
+<summary>    
 ## Bônus (opcional)
+</summary>
+
 
 - Peça o nome e endereço
     - Ao clicar em "Fechar pedido", lance dois `prompt` para o usuário solicitando seu **nome** e **endereço**. Essas informações devem então serem adicionadas na mensagem final que é enviada por WhatsApp nesse **formato** (igualzinho, sem nenhum caractere a mais):
@@ -66,7 +81,7 @@
         
 - Confirme os dados antes de finalizar o pedido
     - Ao clicar em "Fechar pedido", em vez de ir para o WhatsApp direto, primeiro revise a compra seguindo a tela bônus disponível no Figma.
-
+</details>
 
 <h1 id="Tecnologias">🚀 Tecnologias</h1>
 
