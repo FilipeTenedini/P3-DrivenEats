@@ -1,4 +1,3 @@
-# projeto3-drivenEats
 # 3° Projeto Driven Education Bootcamp
 ## - 1° Projeto utilizando JavaScript
 ### Você pode acessar a aplicação neste link:
