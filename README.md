@@ -2,7 +2,11 @@
 ## - 1° Projeto utilizando JavaScript
 ### Você pode acessar a aplicação neste link:
   ### - <a href="https://filipetenedini.github.io/P3-DrivenEats/">DrivenEats</a>
+  ### - <a href="https://www.figma.com/file/i8tceg0W7Z9FfANaDbR3FV/DrivenEats"> Figma </a>
+  
 <br><br><br>
+
+
 <p align="center">
   |&nbsp;&nbsp;&nbsp<a href="#Projeto">Projeto</a>&nbsp;&nbsp;
   |&nbsp;&nbsp;&nbsp<a href="#Tecnologias">Tecnologias</a>&nbsp;&nbsp;
